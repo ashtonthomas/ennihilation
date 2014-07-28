@@ -148,7 +148,7 @@ module Overlord
 
       @template = template
       @seconds = session[:boom_time] - Time.now
-      @boom_time = session[:boom_time] - (5 * 6 *60)
+      @boom_time = session[:boom_time] - (5 * 60 *60)
 
       erb :activated
 
@@ -164,7 +164,7 @@ module Overlord
       else
         @template = template
         @seconds = session[:boom_time] - Time.now
-        @boom_time = session[:boom_time] - (5 * 6 *60)
+        @boom_time = session[:boom_time] - (5 * 60 *60)
         erb :activated
       end
     end
